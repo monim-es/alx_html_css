@@ -1,1 +1,355 @@
-.
+/* ---- GLOBAL STYLES & VARIABLES ---- */
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+:root {
+    --color-primary: #C271FF;
+    --color-dark-bg: #071629;
+    --color-white: #FFFFFF;
+    --color-text-dark: #071629;
+    --color-text-light: #FFFFFF;
+    --color-text-grey: rgba(7, 22, 41, 0.5);
+
+    --font-primary: 'Source Sans Pro', sans-serif;
+    --font-logo: 'Coiny', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text-dark);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+.btn {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 22px;
+    padding: 13px 25px;
+    cursor: pointer;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* ---- HEADER & HERO SECTION ---- */
+.hero {
+    background-color: var(--color-dark-bg); /* Assuming hero has dark background */
+    padding: 20px 100px 50px 100px;
+    color: var(--color-white);
+    text-align: center;
+    background-image: url("CSS Advanced/Object.png");
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 120px; /* This is an assumption, adjust as needed */
+    font-weight: 700;
+}
+
+.hero-keywords {
+    display: flex;
+    gap: 50px;
+    font-weight: 700;
+}
+
+/* ---- PROS SECTION ---- */
+.pros-section {
+    padding-top: 80px;
+}
+
+.pros-section h2 {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+
+.pros-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.pro-card {
+    text-align: center;
+}
+
+.pro-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pro-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.pro-card p {
+    font-style: italic;
+    font-size: 16px;
+}
+
+/* ---- QUOTE SECTION ---- */
+.quote-section {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 80px 100px;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.quote-container img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.quote-text blockquote {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.quote-text h3 {
+    font-weight: 700;
+}
+
+.quote-text p {
+    font-style: italic;
+}
+
+
+/* ---- TUTORIALS SECTION ---- */
+.tutorials-section {
+    padding: 80px 100px;
+    text-align: center;
+}
+
+.tutorials-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.tutorials-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: left;
+}
+
+.tutorial-card {
+    background: var(--color-white);
+    box-shadow: 0px 2px 4px rgba(7, 22, 41, 0.18);
+    border-radius: 5px;
+}
+
+.tutorial-card > img {
+    width: 100%;
+    height: 154px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.tutorial-card h3 {
+    font-size: 16px;
+    color: var(--color-text-dark);
+    margin: 15px;
+}
+
+.tutorial-card p {
+    font-size: 14px;
+    color: var(--color-text-grey);
+    line-height: 24px;
+    margin: 0 15px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.author h4 {
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+    margin: 0 15px 10px 15px;
+    color: var(--color-primary);
+}
+.star-grey {
+    color: #D8D8D8;
+}
+
+.duration {
+    text-align: right !important;
+    color: var(--color-primary) !important;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+/* ---- MEMBERSHIP SECTION ---- */
+.membership-section {
+    background-color: var(--color-dark-bg);
+    color: var(--color-white);
+    padding: 80px 100px;
+    text-align: center;
+}
+
+.membership-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-primary); /* This might need adjustment */
+    margin-bottom: 50px;
+}
+.membership-section h2 span {
+  color: white;
+}
+
+.membership-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.membership-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.membership-item p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+/* ---- FAQ SECTION ---- */
+.faq-section {
+    padding: 80px 100px;
+}
+
+.faq-section h2 {
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px 40px;
+    max-width: 920px;
+    margin: auto;
+}
+
+.faq-item h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text-grey);
+}
+
+
+/* ---- FOOTER ---- */
+footer {
+    background-color: var(--color-dark-bg);
+    color: var(--color-white);
+    padding: 60px 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.social-icons i {
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    opacity: 0.35;
+    font-size: 12px;
+}
+
+
+.red-word {
+  color: #C271FF;
+}
+
