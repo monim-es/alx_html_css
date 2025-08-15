@@ -1,0 +1,80 @@
+
+
+/* Results Section */
+.results {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.results::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z" fill="rgba(255,255,255,0.05)"/></svg>') center/cover;
+}
+
+.results-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.results .section-title {
+  color: #fff;
+}
+
+.results .section-description {
+  color: rgba(255, 255, 255, 0.8);   
+  text-align: center;
+  
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.stat-item {
+  text-align: center;
+  background: #ff6b6b;
+  padding: 30px 20px;
+  border-radius: 10px;
+  transform: perspective(1000px) rotateX(10deg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.stat-item:hover {
+  transform: perspective(1000px) rotateX(0deg) translateY(-5px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 14px;
+  opacity: 0.9;
+}

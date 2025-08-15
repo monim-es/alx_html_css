@@ -1,0 +1,56 @@
+
+
+/* What we do section */
+.services {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: 300;
+}
+
+.section-description {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.service-item {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.service-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
